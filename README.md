@@ -5,20 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>星云_绚丽烟花</title>
-<style type="text/css">
-html,body{overflow:hidden;}
-body,div,p{margin:0;padding:0;}
-body{background:#000;font:12px/1.5 arial;color:#7A7A7A;}
-a{text-decoration:none;outline:none;}
-#tips,#copyright{position:absolute;width:100%;height:50px;text-align:center;background:#171717;border:2px solid #484848;}
-#tips{top:0;border-width:0 0 2px;}
-#tips a{font:14px/30px arial;color:#FFF;background:#F06;display:inline-block;margin:10px 5px 0;padding:0 15px;border-radius:15px;}
-#tips a.active{background:#FE0000;}
-#copyright{bottom:0;line-height:50px;border-width:2px 0 0;}
-#copyright a{color:#FFF;background:#7A7A7A;padding:2px 5px;border-radius:10px;}
-#copyright a:hover{background:#F90;}
-p{position:absolute;top:55px;width:100%;text-align:center;}
-</style>
+
 <script type="text/javascript">
         var dappAddress = "n1GUuk3VZFf7FAyagJNCtHyCasJnJMoobC1";
 
@@ -118,9 +105,7 @@ FireWorks.prototype = {
     clearInterval(oEntity.timer);
     document.body.removeChild(oEntity);
     (function() {
-    # //在50-100之间随机生成碎片
-     #//由于IE浏览器处理效率低, 随机范围缩小至20-30
-   #  //自动放烟花时, 随机范围缩小至20-30
+
      var len = (/msie/i.test(navigator.userAgent) || that.type == 2) ? fgm.randomRange(20, 30) : fgm.randomRange(50, 100)     
      for (i = 0; i < len; i++) {
       oChip = document.createElement("div");
