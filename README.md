@@ -55,7 +55,7 @@ var fgm = {
   return "#" + str 
  }
 };
-//初始化对象
+#//初始化对象
 function FireWorks() {
  this.type = 0;
  this.timer = null;
@@ -118,9 +118,9 @@ FireWorks.prototype = {
     clearInterval(oEntity.timer);
     document.body.removeChild(oEntity);
     (function() {
-     //在50-100之间随机生成碎片
-     //由于IE浏览器处理效率低, 随机范围缩小至20-30
-     //自动放烟花时, 随机范围缩小至20-30
+    # //在50-100之间随机生成碎片
+     #//由于IE浏览器处理效率低, 随机范围缩小至20-30
+   #  //自动放烟花时, 随机范围缩小至20-30
      var len = (/msie/i.test(navigator.userAgent) || that.type == 2) ? fgm.randomRange(20, 30) : fgm.randomRange(50, 100)     
      for (i = 0; i < len; i++) {
       oChip = document.createElement("div");
